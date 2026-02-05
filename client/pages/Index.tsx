@@ -59,7 +59,8 @@ export default function Index() {
                 Your Campus Coffee Haven
               </h1>
               <p className="text-lg text-foreground/70 mb-8 max-w-lg">
-                Freshly brewed coffee, cozy vibes, and the perfect study spot. Where students connect over great drinks and shared moments.
+                Freshly brewed coffee, cozy vibes, and the perfect study spot.
+                Where students connect over great drinks and shared moments.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <button className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-3 rounded-lg font-semibold transition-colors flex items-center justify-center gap-2">
@@ -74,15 +75,21 @@ export default function Index() {
               {/* Quick Stats */}
               <div className="grid grid-cols-3 gap-4 mt-12">
                 <div>
-                  <p className="text-2xl md:text-3xl font-bold text-primary">500+</p>
+                  <p className="text-2xl md:text-3xl font-bold text-primary">
+                    500+
+                  </p>
                   <p className="text-sm text-foreground/60">Happy Students</p>
                 </div>
                 <div>
-                  <p className="text-2xl md:text-3xl font-bold text-primary">100%</p>
+                  <p className="text-2xl md:text-3xl font-bold text-primary">
+                    100%
+                  </p>
                   <p className="text-sm text-foreground/60">Fresh Brewed</p>
                 </div>
                 <div>
-                  <p className="text-2xl md:text-3xl font-bold text-primary">7am</p>
+                  <p className="text-2xl md:text-3xl font-bold text-primary">
+                    7am
+                  </p>
                   <p className="text-sm text-foreground/60">Open Daily</p>
                 </div>
               </div>
@@ -97,12 +104,20 @@ export default function Index() {
       </section>
 
       {/* About Section */}
-      <section id="about" className="py-16 md:py-24 bg-card border-t border-border">
+      <section
+        id="about"
+        className="py-16 md:py-24 bg-card border-t border-border"
+      >
         <div className="container">
           <div className="max-w-3xl mx-auto text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">About Meeter's Café</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+              About Meeter's Café
+            </h2>
             <p className="text-foreground/70 text-lg">
-              Founded by students, for students. We believe great coffee brings people together. Our café is more than just a coffee shop—it's where friendships start, ideas bloom, and late-night study sessions become memories.
+              Founded by students, for students. We believe great coffee brings
+              people together. Our café is more than just a coffee shop—it's
+              where friendships start, ideas bloom, and late-night study
+              sessions become memories.
             </p>
           </div>
 
@@ -111,7 +126,8 @@ export default function Index() {
               <Coffee className="w-10 h-10 text-primary mb-4" />
               <h3 className="text-xl font-semibold mb-2">Quality Brews</h3>
               <p className="text-foreground/70">
-                We source the finest beans from local roasters and craft every drink with care and expertise.
+                We source the finest beans from local roasters and craft every
+                drink with care and expertise.
               </p>
             </div>
 
@@ -119,7 +135,8 @@ export default function Index() {
               <Users className="w-10 h-10 text-primary mb-4" />
               <h3 className="text-xl font-semibold mb-2">Community First</h3>
               <p className="text-foreground/70">
-                A welcoming space where every student feels at home, whether studying alone or meeting friends.
+                A welcoming space where every student feels at home, whether
+                studying alone or meeting friends.
               </p>
             </div>
 
@@ -127,7 +144,8 @@ export default function Index() {
               <Star className="w-10 h-10 text-primary mb-4" />
               <h3 className="text-xl font-semibold mb-2">Student Friendly</h3>
               <p className="text-foreground/70">
-                Great prices, loyalty rewards, and a space that welcomes you from morning classes to late-night sessions.
+                Great prices, loyalty rewards, and a space that welcomes you
+                from morning classes to late-night sessions.
               </p>
             </div>
           </div>
@@ -138,9 +156,12 @@ export default function Index() {
       <section className="py-16 md:py-24">
         <div className="container">
           <div className="max-w-3xl mx-auto text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Featured Favorites</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+              Featured Favorites
+            </h2>
             <p className="text-foreground/70 text-lg">
-              Start with our most-loved drinks and pastries. Each one crafted to perfection.
+              Start with our most-loved drinks and pastries. Each one crafted to
+              perfection.
             </p>
           </div>
 
@@ -157,9 +178,13 @@ export default function Index() {
                 </div>
                 <div className="p-4">
                   <h3 className="font-semibold text-lg mb-2">{dish.name}</h3>
-                  <p className="text-foreground/60 text-sm mb-4">{dish.description}</p>
+                  <p className="text-foreground/60 text-sm mb-4">
+                    {dish.description}
+                  </p>
                   <div className="flex justify-between items-center">
-                    <span className="text-primary font-bold text-lg">{dish.price}</span>
+                    <span className="text-primary font-bold text-lg">
+                      {dish.price}
+                    </span>
                     <button className="bg-primary/10 text-primary hover:bg-primary hover:text-primary-foreground px-3 py-2 rounded-lg text-sm font-medium transition-colors">
                       Order
                     </button>
@@ -184,7 +209,9 @@ export default function Index() {
       {/* Location & Hours Section */}
       <section className="py-16 md:py-24 bg-card border-t border-border">
         <div className="container">
-          <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">Find Us</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
+            Find Us
+          </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             <div className="space-y-8">
@@ -193,7 +220,8 @@ export default function Index() {
                 <div>
                   <h3 className="font-semibold text-lg mb-1">Location</h3>
                   <p className="text-foreground/70">
-                    123 Campus Lane<br />
+                    123 Campus Lane
+                    <br />
                     Student Center, Building A<br />
                     Your College Town
                   </p>
@@ -244,9 +272,12 @@ export default function Index() {
       <section className="py-16 md:py-24">
         <div className="container">
           <div className="max-w-3xl mx-auto text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Partners</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+              Our Partners
+            </h2>
             <p className="text-foreground/70 text-lg">
-              We collaborate with amazing local businesses and campus communities to bring you the best.
+              We collaborate with amazing local businesses and campus
+              communities to bring you the best.
             </p>
           </div>
 
@@ -266,9 +297,12 @@ export default function Index() {
           </div>
 
           <div className="mt-12 p-8 rounded-xl bg-gradient-to-r from-primary/10 to-accent/10 border border-primary/20 text-center">
-            <h3 className="font-semibold text-lg mb-2">Want to Partner With Us?</h3>
+            <h3 className="font-semibold text-lg mb-2">
+              Want to Partner With Us?
+            </h3>
             <p className="text-foreground/70 mb-4">
-              We're always looking for local businesses and campus groups to collaborate with.
+              We're always looking for local businesses and campus groups to
+              collaborate with.
             </p>
             <button className="bg-primary hover:bg-primary/90 text-primary-foreground px-6 py-2 rounded-lg font-medium transition-colors">
               Get in Touch
@@ -281,7 +315,9 @@ export default function Index() {
       <section className="py-16 md:py-24 bg-card border-t border-border">
         <div className="container">
           <div className="max-w-2xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Ready to Visit?</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+              Ready to Visit?
+            </h2>
             <p className="text-foreground/70 text-lg mb-8">
               Stop by Meeter's Café today and experience why students love us.
             </p>

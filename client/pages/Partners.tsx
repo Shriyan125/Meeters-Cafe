@@ -30,9 +30,12 @@ const Partners = () => {
       <div className="py-12 md:py-20">
         <div className="container">
           <div className="max-w-3xl mx-auto text-center mb-12">
-            <h1 className="text-4xl md:text-5xl font-bold mb-4">Our Partners</h1>
+            <h1 className="text-4xl md:text-5xl font-bold mb-4">
+              Our Partners
+            </h1>
             <p className="text-foreground/70 text-lg">
-              We work with amazing local businesses and campus communities to bring you the best experience.
+              We work with amazing local businesses and campus communities to
+              bring you the best experience.
             </p>
           </div>
 
@@ -49,7 +52,9 @@ const Partners = () => {
                   </div>
                   <div>
                     <h3 className="font-semibold text-lg">{partner.name}</h3>
-                    <p className="text-sm text-primary font-medium mb-2">{partner.type}</p>
+                    <p className="text-sm text-primary font-medium mb-2">
+                      {partner.type}
+                    </p>
                     <p className="text-foreground/70">{partner.description}</p>
                   </div>
                 </div>
@@ -62,9 +67,12 @@ const Partners = () => {
             <div className="flex items-center justify-center gap-3 mb-4">
               <Users className="w-8 h-8 text-primary" />
             </div>
-            <h2 className="text-2xl font-bold mb-2">Interested in Partnering?</h2>
+            <h2 className="text-2xl font-bold mb-2">
+              Interested in Partnering?
+            </h2>
             <p className="text-foreground/70 mb-6">
-              We're always looking for local businesses, suppliers, and campus communities to collaborate with. Let's work together!
+              We're always looking for local businesses, suppliers, and campus
+              communities to collaborate with. Let's work together!
             </p>
             <button className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-3 rounded-lg font-semibold transition-colors">
               Get in Touch
@@ -73,7 +81,9 @@ const Partners = () => {
 
           {/* Benefits Section */}
           <div className="max-w-3xl mx-auto">
-            <h3 className="text-2xl font-bold mb-8 text-center">Why Partner With Us?</h3>
+            <h3 className="text-2xl font-bold mb-8 text-center">
+              Why Partner With Us?
+            </h3>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <div className="p-6 rounded-lg bg-background border border-border text-center">
                 <div className="text-3xl mb-3">📍</div>

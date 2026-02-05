@@ -24,7 +24,9 @@ const Layout = ({ children }: LayoutProps) => {
         <div className="container flex justify-between items-center py-4">
           <Link to="/" className="flex items-center gap-2">
             <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-lg">M</span>
+              <span className="text-primary-foreground font-bold text-lg">
+                M
+              </span>
             </div>
             <span className="font-bold text-lg text-foreground hidden sm:inline">
               Meeter's Café
@@ -97,12 +99,15 @@ const Layout = ({ children }: LayoutProps) => {
             <div>
               <div className="flex items-center gap-2 mb-4">
                 <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
-                  <span className="text-primary-foreground font-bold text-lg">M</span>
+                  <span className="text-primary-foreground font-bold text-lg">
+                    M
+                  </span>
                 </div>
                 <span className="font-bold text-lg">Meeter's Café</span>
               </div>
               <p className="text-background/70 text-sm">
-                Your favorite student café serving great coffee and vibes since day one.
+                Your favorite student café serving great coffee and vibes since
+                day one.
               </p>
             </div>
 
@@ -111,17 +116,26 @@ const Layout = ({ children }: LayoutProps) => {
               <h3 className="font-bold mb-4">Quick Links</h3>
               <ul className="space-y-2 text-sm text-background/70">
                 <li>
-                  <a href="/#about" className="hover:text-background transition-colors">
+                  <a
+                    href="/#about"
+                    className="hover:text-background transition-colors"
+                  >
                     About Us
                   </a>
                 </li>
                 <li>
-                  <a href="/menu" className="hover:text-background transition-colors">
+                  <a
+                    href="/menu"
+                    className="hover:text-background transition-colors"
+                  >
                     Menu
                   </a>
                 </li>
                 <li>
-                  <a href="/location" className="hover:text-background transition-colors">
+                  <a
+                    href="/location"
+                    className="hover:text-background transition-colors"
+                  >
                     Location
                   </a>
                 </li>

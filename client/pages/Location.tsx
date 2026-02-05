@@ -21,7 +21,8 @@ const Location = () => {
                 <div>
                   <h3 className="font-semibold text-lg mb-2">Location</h3>
                   <p className="text-foreground/70">
-                    123 Campus Lane<br />
+                    123 Campus Lane
+                    <br />
                     Student Center, Building A<br />
                     Your College Town, ST 12345
                   </p>
@@ -74,7 +75,9 @@ const Location = () => {
             <div className="h-96 md:h-full rounded-xl bg-gradient-to-br from-accent/20 to-primary/20 flex items-center justify-center border border-border">
               <div className="text-center">
                 <MapPin className="w-16 h-16 text-primary mx-auto mb-3" />
-                <p className="text-foreground/60">Interactive Map Coming Soon</p>
+                <p className="text-foreground/60">
+                  Interactive Map Coming Soon
+                </p>
               </div>
             </div>
           </div>
