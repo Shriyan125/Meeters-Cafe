@@ -1,22 +1,56 @@
 import Layout from "@/components/Layout";
-import { Coffee, Zap, BookOpen } from "lucide-react";
 
 const Menu = () => {
   const menuCategories = [
     {
       name: "Coffee",
       icon: "☕",
-      items: ["Espresso", "Americano", "Cappuccino", "Latte", "Macchiato"],
+      items: [
+        { name: "Espresso", price: "$2.50" },
+        { name: "Americano", price: "$3.00" },
+        { name: "Cappuccino", price: "$4.50" },
+        { name: "Latte", price: "$4.75" },
+        { name: "Macchiato", price: "$4.00" },
+        { name: "Cortado", price: "$3.75" },
+        { name: "Flat White", price: "$5.00" },
+      ],
     },
     {
       name: "Tea",
       icon: "🍵",
-      items: ["Green Tea", "Black Tea", "Herbal Tea", "Matcha", "Chai Latte"],
+      items: [
+        { name: "Green Tea", price: "$3.50" },
+        { name: "Black Tea", price: "$3.50" },
+        { name: "Herbal Tea", price: "$3.75" },
+        { name: "Matcha Latte", price: "$5.00" },
+        { name: "Chai Latte", price: "$4.50" },
+        { name: "Oolong Tea", price: "$3.75" },
+        { name: "English Breakfast", price: "$3.50" },
+      ],
+    },
+    {
+      name: "Cold Drinks",
+      icon: "🧊",
+      items: [
+        { name: "Iced Coffee", price: "$3.75" },
+        { name: "Iced Latte", price: "$4.75" },
+        { name: "Iced Americano", price: "$3.50" },
+        { name: "Cold Brew", price: "$4.00" },
+        { name: "Iced Matcha", price: "$5.25" },
+        { name: "Iced Chai", price: "$4.75" },
+      ],
     },
     {
       name: "Pastries",
       icon: "🥐",
-      items: ["Croissant", "Muffin", "Scone", "Cookie", "Brownie"],
+      items: [
+        { name: "Croissant", price: "$3.50" },
+        { name: "Chocolate Croissant", price: "$4.00" },
+        { name: "Muffin", price: "$3.75" },
+        { name: "Scone", price: "$3.50" },
+        { name: "Cookie", price: "$2.50" },
+        { name: "Brownie", price: "$3.00" },
+      ],
     },
   ];
 
@@ -27,39 +61,38 @@ const Menu = () => {
           <div className="max-w-3xl mx-auto text-center mb-12">
             <h1 className="text-4xl md:text-5xl font-bold mb-4">Our Menu</h1>
             <p className="text-foreground/70 text-lg">
-              Explore our full selection of fresh brews, pastries, and favorites.
+              Explore our full selection of fresh brews, pastries, and cold drinks.
             </p>
           </div>
 
-          {/* Placeholder Content */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+          {/* Menu Categories Grid */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
             {menuCategories.map((category, idx) => (
               <div
                 key={idx}
                 className="p-8 rounded-xl bg-card border border-border hover:shadow-lg transition-shadow"
               >
-                <div className="text-4xl mb-4">{category.icon}</div>
-                <h2 className="text-2xl font-bold mb-6">{category.name}</h2>
-                <ul className="space-y-3">
+                <div className="flex items-center gap-3 mb-6">
+                  <div className="text-3xl">{category.icon}</div>
+                  <h2 className="text-2xl font-bold">{category.name}</h2>
+                </div>
+                <div className="space-y-3">
                   {category.items.map((item, i) => (
-                    <li key={i} className="text-foreground/70">
-                      • {item}
-                    </li>
+                    <div
+                      key={i}
+                      className="flex justify-between items-center p-4 rounded-lg bg-background border border-border/50 hover:border-primary/30 hover:bg-background transition-colors group cursor-pointer"
+                    >
+                      <span className="font-medium text-foreground group-hover:text-primary transition-colors">
+                        {item.name}
+                      </span>
+                      <span className="text-primary font-bold text-lg">
+                        {item.price}
+                      </span>
+                    </div>
                   ))}
-                </ul>
+                </div>
               </div>
             ))}
-          </div>
-
-          {/* CTA */}
-          <div className="mt-16 p-8 rounded-xl bg-gradient-to-r from-primary/10 to-accent/10 border border-primary/20 text-center">
-            <h3 className="text-2xl font-bold mb-2">Want to see more?</h3>
-            <p className="text-foreground/70 mb-6">
-              Ask us to build out the full detailed menu with prices and descriptions!
-            </p>
-            <button className="bg-primary hover:bg-primary/90 text-primary-foreground px-6 py-2 rounded-lg font-semibold transition-colors">
-              Request Full Menu
-            </button>
           </div>
         </div>
       </div>
